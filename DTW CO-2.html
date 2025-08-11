@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <title>Document</title>
+    <script>
+        function validation()
+        {
+            var username=document.getElementById("un").value;
+            var password=document.getElementById("pwd").value;
+            
+            let isvalid=true;
+            if(username==""){
+                alert("Enter your username");
+                isvalid=false;
+            }
+            pwd="abc123";
+            if(password!=pwd)
+            {
+                alert("password mis-match");
+                isvalid=false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form style="text-align: center;" action="Applicationform.html"></form>
+    <h1> Login Page</h1> <br><br>
+    <label> Username: </label>
+    <input type="text" id="un" placeholder="username" name="username"><br><br>
+    <label>password</label> 
+    <input type="password" id="pwd" placeholder="password" name="password"><br><br>
+    <button type="submit" onclick="validation()">Login</button>
+</form>
+</body>
+</html>
